@@ -75,7 +75,7 @@ li {
 }
 
 .search-field {
-  opacity: 0;
+  opacity: 0.5;
   width: 210px;
   height: 30px;
   -webkit-box-sizing: border-box;
