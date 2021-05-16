@@ -1,0 +1,134 @@
+.navigation
+    display: flex
+    justify-content: space-between
+    background: #F8F3F4
+
+    &_left
+        padding-top: 59px
+
+    &_right
+        padding-top: 65px
+        padding-bottom: 66px
+        display: flex
+
+.nav_link
+    text-decoration: none
+    font-weight: 300
+    font-size: 14px
+    line-height: 17px
+    color: #636363
+
+    &:hover
+        color: $colorSelect
+
+    &:last-child
+        color: $colorSelect
+
+    &:not(:last-child)::after
+        content: "/"
+        padding: 6px
+
+.info_new
+    text-decoration: none
+    font-size: 24px
+    line-height: 29px
+    color: $colorSelect
+
+/* sortirovka */
+.sort
+    display: flex
+    position: relative
+    padding-top: 35px
+    padding-bottom: 16px
+
+    &_filter
+
+    &_parametr
+        margin-left: calc(33.33333% + 16px)
+        display: flex
+        padding-top: 16px
+
+    &_items
+        display: none
+
+    &_filter_active:hover .sort_items
+        display: block
+
+    &_text
+        padding-top: 16px
+        position: absolute
+        padding-left: 16px
+        font-weight: 600
+        font-size: 14px
+        line-height: 17px
+        color: #000000
+        font-family: Lato
+
+    &_filter_active:hover .sort_text
+        display: none
+
+    &_filt_activ
+        color: #EF5B70
+        font-weight: 600
+        font-size: 14px
+        line-height: 17px
+
+    &_summary
+        margin-left: 16px
+        margin-top: 24px
+        display: flex
+        align-items: center
+        background-position: bottom
+        background-repeat: no-repeat
+
+.h4_sort_summary
+    padding-left: 8px
+    font-size: 14px
+    line-height: 17px
+    color: #EF5B70
+    cursor: pointer
+
+.sort_filter_active:hover
+    width: 360px
+    background: #FFFFFF
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    padding: 16px
+    box-sizing: border-box
+    position: absolute
+    z-index: 1
+    transition: all 0.5s ease
+
+.sort_ul
+    padding-top: 12px
+    list-style-type: none
+    padding-left: 30px
+    font-size: 14px
+    line-height: 17px
+    color: #6F6E6E
+
+.li_sort_ul
+    padding-top: 12px
+    display: block
+    text-decoration: none
+    font-size: 14px
+    line-height: 17px
+    color: #6F6E6E
+
+    &:hover
+        color: #EF5B70
+
+.sort_size
+    background: #FFFFFF
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    padding: 8px 30px 8px 8px
+    display: flex
+    flex-direction: column
+    position: absolute
+    top: 24px
+    left: 0px
+    z-index: 1
+
+.sort_open
+    position: relative
+    padding-right: 32px
+    cursor: pointer
