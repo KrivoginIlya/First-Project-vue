@@ -2,19 +2,19 @@
   <div id="app">
     <div class="header center">
       <div class="header-left">
-        <router-link to="/Home"
+        <router-link to="/"
           ><img class="img-logo" src="@/img/logo.svg" alt="logo" />
         </router-link>
         <form action="" class="search-form ">
           <button class="btn-search">
             <img src="@/img/search.svg" alt="" />
-          </button>
+     </button>
           <input type="text" class="search-field" placeholder="Поиск" />
         </form>
       </div>
       <div class="header-right">
         <input id="switcher" type="checkbox" />
-        <label for="switcher"
+            <label for="switcher"
           ><img class="menuLogo" src="@/img/menu.svg" alt="menu"
         /></label>
         <nav class="drop">
@@ -70,6 +70,7 @@
           </div>
           <div class="right-block"></div>
           <div class="by-goods">
+            <p>Total price:</p>
             <router-link to="/Cart">
               <button class="by-goods-button">
                 Корзина
